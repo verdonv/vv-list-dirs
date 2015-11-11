@@ -64,7 +64,7 @@ class VVLF_Display {
 		$fileListCounter = 1;
 
 		// display the folders
-		&$this->vvlf_print_nubranding();
+		$this->vvlf_VVLFDisplayFolders();
 
     }
 
@@ -105,7 +105,7 @@ class VVLF_Display {
 
 		// The $filelist variable will hold a list of files,
 		// lets go get it.
-		$filelist = VVLFGenerateFileList( $folder, $link );
+		$filelist = $this->VVLFGenerateFileList( $folder, $link );
 
 		// if there are no items, this folder is empty.
 		if( !count( $filelist ) )
@@ -116,7 +116,7 @@ class VVLF_Display {
 		else
 		{
 			// Using the list of files, generate an HTML representation of the folder.
-			$output = VVLFListFiles( $filelist, $sort, $options );
+			$output = $this->VVLFListFiles( $filelist, $sort, $options );
 			return $output;
 		}
 	}
@@ -275,7 +275,7 @@ class VVLF_Display {
 		foreach( $filelist as $itemName => $item )
 		{
 			// Get file variables
-			$size = VVLFFormatFileSize( $item['size'] );
+			$size = $this->VVLFFormatFileSize( $item['size'] );
 			//$date = date( "F j, Y", $item['date'] );
 			$date = date( "n/j/Y g:i a", $item['date'] );
 			$link = $wpurl.'/'.$item['link'];
