@@ -40,6 +40,7 @@ define( 'VVLF__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
 require_once( VVLF__PLUGIN_DIR . 'vvlf-settings.php' );
 require_once( VVLF__PLUGIN_DIR . 'vvlf-display.php' );
+require_once( VVLF__PLUGIN_DIR . 'vvlf-functions.php' );
 
-//register_activation_hook( __FILE__, array( 'VVLF_Settings', 'vvlf_activate') );
-//register_deactivation_hook( __FILE__, array( 'VVLF_Settings', 'vvlf_deactivate') );
+register_activation_hook( __FILE__, array( 'VVLF_Settings', 'vvlf_activate') );
+register_deactivation_hook( __FILE__, array( 'VVLF_Settings', 'vvlf_deactivate') );
