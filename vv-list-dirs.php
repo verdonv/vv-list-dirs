@@ -2,7 +2,7 @@
 /*
 Plugin Name: VV List Dirs
 Plugin URI: http://wp.verdon.ca/
-Description: Lets WordPress users display clickable lists of folders in their pages and posts.
+Description: Lets WordPress users display clickable lists of folders in their pages and posts. Look to Settings > List Directories after activation.
 Version: 1.0
 Author: Verdon Vaillancourt
 Author URI: http://verdon.ca/

@@ -274,7 +274,7 @@ class VVLF_Settings {
 
     // CALLBACK FOR SETTINGS SECTION
 	public function vvlf_settings_section_callback(  ) {
-		echo __( 'You may customize the following options', 'vv-list-dirs' );
+		echo __( 'You may customize the following options, then place the shortcode [vvlistfolders] in any text area.', 'vv-list-dirs' );
 	}
 
     // CALLBACK FOR ADMIN SECTION
