@@ -3,9 +3,10 @@
 Plugin Name: VV List Dirs
 Plugin URI: http://wp.verdon.ca/
 Description: Lets WordPress users display clickable lists of folders in their pages and posts. Look to Settings > List Directories after activation.
-Version: 1.0
+Version: 1.0.0
 Author: Verdon Vaillancourt
 Author URI: http://verdon.ca/
+Update URL: https://github.com/verdonv/vv-list-dirs/
 License: GPLv2 or later
 Text Domain: vv-list-dirs
 */
@@ -33,7 +34,7 @@ if ( !function_exists( 'add_action' ) ) {
 }
 
 
-define( 'VVLF_VERSION', '0.0.1' );
+define( 'VVLF_VERSION', '1.0.0' );
 define( 'VVLF__MINIMUM_WP_VERSION', '4.0' );
 define( 'VVLF__PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'VVLF__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
